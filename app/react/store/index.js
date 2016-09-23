@@ -7,7 +7,7 @@ import DevTools from '../containers/DevTools';
 
 const enhancer = compose(
   applyMiddleware(thunk, createLogger()),
-  DevTools.instrument()
+  window.devToolsExtension ? window.devToolsExtension() : DevTools.instrument()
 );
 
 export default initialState => {
