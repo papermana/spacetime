@@ -1,0 +1,17 @@
+.timezone {
+  &__column {
+    display: inline-block;
+    width: 200px;
+    border: 2px solid #212444;
+    min-height: 600px;
+    background: rgba(46, 67, 114, .1);
+    margin-right: 15px;
+  }
+
+  &__name {
+    padding: 15px 5px;;
+    font-size: 16px;
+    background: #255E69;
+    color: #fff;
+  }
+}
