@@ -1,7 +1,7 @@
 import faker from 'faker';
-import getAvatar from 'api/getAvatar';
+import getAvatar from '../api/getAvatar';
 
-export default const mockUsers = (num = 10) => {
+export default mockUsers = (num = 10) => {
   const users = [];
 
   for (let i = 0; i < num; i++) {
