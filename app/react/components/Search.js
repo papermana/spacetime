@@ -2,9 +2,9 @@ import React from 'react';
 
 const Search = (props) => {
   return (
-    <div>
-      <input type="search" onChange={props.performSearch} />
-    </div>
+    <input className="search"
+      type="search"
+      onChange={props.performSearch} />
   );
 }
 
