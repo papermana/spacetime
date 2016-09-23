@@ -8,7 +8,7 @@ const updateTime = createActions(
   time => time.toISOString(),
 );
 
-export default const startClock = () => {
+const startClock = () => {
   return (dispatch, getState) => {
     const increaseTime = (time) => {
       return moment(time).add(1, 'm');
@@ -24,3 +24,5 @@ export default const startClock = () => {
     );
   };
 };
+
+export default startClock;
