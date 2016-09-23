@@ -1,4 +1,4 @@
-export default const getAvatar = fetch(
+export default getAvatar = fetch(
     'https://randomuser.me/api/'
   )
   .then((response) => {
