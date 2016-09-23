@@ -7,7 +7,7 @@ export default (state = [], action) => {
 
       newState.map((user) => ({
         ...user,
-        isSearched: user.name.contains(action.payload),
+        isSearched: user.name.includes(action.payload),
       }));
     default:
       return state;
