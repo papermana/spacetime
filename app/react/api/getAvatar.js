@@ -1,16 +1,8 @@
-const getAvatar = fetch(
-    'https://randomuser.me/api/'
-  )
-  .then((response) => {
-    if (response.ok) {
-      return response.json();
-    }
-    else {
-      throw new Error('Cannot reach randomuser.me API');
-    }
-  })
-  .then((json) => {
-    return json.results.picture.medium;
-  });
+const getAvatar = () => {
+  const id = Math.random() * 100;
+  const gender = Math.random() < 0.5 ? 'men' : 'women';
+
+  return `https://randomuser.me/api/portraits/${gender}/${id}.jpg`;
+};
 
 export default getAvatar;

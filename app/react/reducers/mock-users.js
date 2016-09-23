@@ -1,5 +1,5 @@
 import faker from 'faker';
-// import getAvatar from '../api/getAvatar';
+import getAvatar from '../api/getAvatar';
 
 const mockUsers = (num = 10) => {
   const users = [];
@@ -10,6 +10,7 @@ const mockUsers = (num = 10) => {
       email: faker.internet.email(),
       city: faker.address.city(),
       country: faker.address.country(),
+      avatar: getAvatar(),
     };
   }
 
